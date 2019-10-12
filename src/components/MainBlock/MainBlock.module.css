@@ -1,0 +1,38 @@
+.mainBlock
+{
+    display: flex;
+
+    height: 100vh;
+
+    background-color: rgb(24, 24, 24);
+}
+
+.container
+{
+    display: flex;
+    justify-content: space-around;
+
+    box-sizing: border-box;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding: 50px;
+
+    border: solid 1px;
+}
+
+@media screen and (max-width: 850px)
+{
+    .mainBlock
+{
+    height: auto;
+}
+    .container
+{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+    padding-bottom: 63px;
+    padding-right: 63px;
+}
+}

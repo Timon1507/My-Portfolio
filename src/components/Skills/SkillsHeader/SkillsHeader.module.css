@@ -1,0 +1,21 @@
+.skillsHeader
+{
+    composes: blockHead from '../../../index.css'
+    /* padding-bottom: 100px; */
+}
+
+@media screen and ( max-width: 1502px)
+{
+    .skillsHeader
+    {
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and ( max-width: 672px)
+{
+    .skillsHeader
+    {
+        padding-bottom: 30px;
+    }
+}

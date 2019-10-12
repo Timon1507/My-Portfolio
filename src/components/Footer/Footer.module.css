@@ -1,0 +1,30 @@
+.footer
+{
+    display: flex;
+
+    height: 280px;
+
+    background-color: goldenrod;
+}
+
+.container
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 80%;
+    height: 80%;
+    margin: auto;
+
+    border: solid 1px;
+}
+
+@media screen and (min-width: 800px)
+{
+    .headerName
+    {
+        font-size: 22px;
+    }
+}

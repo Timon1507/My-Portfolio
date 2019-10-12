@@ -1,0 +1,95 @@
+.photo
+{
+    position: relative;
+    align-self: center;
+
+    width: 552px;
+    height: 690px;
+
+    background-color: #242424;
+    z-index: 0;
+}
+
+.photo::before {
+    content: '';
+    position: absolute;
+    top: -33px;
+    left: 20px;
+    width: 100%;
+    height: 740px;
+    border: 7px solid #50b3ae;
+    z-index: -5;
+}
+
+.photo img
+{
+    align-self: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #50b3ae;
+    z-index: 10;
+}
+
+@media screen and (max-width: 1920px)
+{
+    .photo
+{
+    width: 400px;
+    height: 500px;
+}
+
+.photo::before {
+    top: -27px;
+    left: 16px;
+    height: 540px;
+}
+}
+
+@media screen and (max-width: 1680px)
+{
+    .photo
+{
+    width: 252px;
+    height: 315px;
+}
+
+.photo::before {
+    top: -18px;
+    left: 15px;
+    height: 340px;
+    border-width: 5px;
+}
+}
+
+@media screen and (max-width: 850px)
+{
+    .photo
+{
+    width: 200px;
+    height: 250px;
+}
+
+.photo::before {
+    top: -13px;
+    left: 10px;
+    height: 270px;
+    border-width: 3px;
+}
+}
+
+@media screen and (max-width: 375px)
+{
+    .photo
+{
+    width: 152px;
+    height: 190px;
+}
+
+.photo::before {
+    top: -11px;
+    left: 7px;
+    height: 205px;
+}
+}

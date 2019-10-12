@@ -1,0 +1,23 @@
+.skills
+{
+    display: flex;
+
+    min-height: 50vh;
+
+    background-color: #50b3ae;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    width: 80%;
+    height: 80%;
+    margin: 5% auto;
+
+    border: solid 1px;
+}
+
+

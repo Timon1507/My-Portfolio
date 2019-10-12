@@ -1,0 +1,123 @@
+.greeting
+{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+
+    width: 600px;
+    color: #fff;
+}
+
+.greeting span {
+    font-size: 40px;
+    line-height: 64px;
+}
+
+.greeting span:nth-child(2) {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.greeting span:nth-child(2) span{
+    position: relative;
+    font-size: inherit;
+    z-index: 10;
+}
+
+.greeting span:nth-child(2) span::before{
+    position: absolute;
+    top: 38px;
+    left: 3px;
+    content: '';
+    width: 100%;
+    height: 20px;
+    background-color: #50b3ae;
+    z-index: -5;
+}
+
+@media screen and (max-width: 1680px)
+{
+    .greeting span {
+        font-size: 28px;
+        line-height: 50px;
+    }
+    
+    .greeting span:nth-child(2) {
+        font-size: 38px;
+    }
+
+    .greeting span:nth-child(2) span::before{
+        top: 28px;
+        height: 15px;
+    }
+}
+
+@media screen and (max-width: 1440px)
+{
+    .greeting{
+        width: 300px;
+    }
+    .greeting span {
+        font-size: 22px;
+        line-height: 42px;
+    }
+    
+    .greeting span:nth-child(2) {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+
+    .greeting span:nth-child(2) span::before{
+        top: 23px;
+        height: 10px;
+    }
+}
+
+@media screen and (max-width: 850px)
+{
+    .container
+{
+    flex-direction: column;
+}
+.greeting
+{
+    width: 206px; 
+    padding-left: 10px;
+    margin-bottom: 50px;
+}
+.greeting span {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.greeting span:nth-child(2) {
+    font-size: 22px;
+}
+
+.greeting span:nth-child(2) span::before{
+    top: 17px;
+    height: 8px;
+}
+}
+
+@media screen and (max-width: 375px)
+{
+.greeting
+{
+    padding-left: 60px;
+    margin-bottom: 40px;
+}
+.greeting span {
+    font-size: 14px;
+}
+
+.greeting span:nth-child(2) {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.greeting span:nth-child(2) span::before{
+    top: 14px;
+    height: 6px;
+}
+}

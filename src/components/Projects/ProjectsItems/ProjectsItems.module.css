@@ -1,0 +1,4 @@
+.projectsItems {
+  display: flex;
+  flex-direction: column;
+}

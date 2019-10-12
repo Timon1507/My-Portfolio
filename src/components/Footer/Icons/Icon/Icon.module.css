@@ -1,0 +1,25 @@
+.icon
+{
+    width: 40px;
+    height: 40px;
+
+    background-color: #dab24d;
+}
+
+@media screen and (min-width: 495px)
+{
+    .icon
+    {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 800px)
+{
+    .icon
+    {
+        width: 70px;
+        height: 70px;
+    }
+}
